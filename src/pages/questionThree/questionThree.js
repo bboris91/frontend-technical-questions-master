@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 
@@ -36,21 +36,20 @@ const useStyles = makeStyles(() => ({
 	},
 }));
 
-class questionThree extends Component {
-	render(){
-		const classes = useStyles();
-		const mockData = createMockData();
-		return (
-			<div className={classes.container}>
-				<Paper>
-					<List className={classes.root}>
-						{mockData.map((item, i) =>{
-							return <QuestionListItem item={item} key={item.id} divider={i !== mockData.length -1}/>
-						})}
-					</List>
-				</Paper>
-			</div>
-		);
-	}
+const QuestionThree= () => {
+	const classes = useStyles();
+	const mockData = createMockData();
+	return (
+		<div className={classes.container}>
+			<Paper>
+				<List className={classes.root}>
+					{mockData.map((item, i) =>{
+						return <QuestionListItem item={item} key={item.id} divider={i !== mockData.length -1}/>
+					})}
+				</List>
+			</Paper>
+		</div>
+	);
 }
-export default questionThree
+
+export default QuestionThree;

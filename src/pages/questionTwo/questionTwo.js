@@ -19,7 +19,7 @@ class QuestionTwo extends Component {
 			body: '',
 			loading: true,
 		};
-		getCardDetails.then(({title, imgSrc, body}) =>{
+		getCardDetails().then(({title, imgSrc, body}) =>{
 			this.setState({
 				title:  title,
 				imgSrc: imgSrc,
