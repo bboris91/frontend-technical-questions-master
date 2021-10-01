@@ -1,5 +1,5 @@
 import AcUnit from "@material-ui/icons/AcUnit";
-import UUID from "uuid/v4";
+import UUID from "uuid/dist/v4";
 
 /*
  * Please do not add all the mock data statically here.
