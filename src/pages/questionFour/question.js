@@ -1,6 +1,6 @@
 import React from 'react'
-import Typography from "@material-ui/core/Typography";
-import {CardMedia} from "@material-ui/core";
+import Typography from "@mui/material/Typography";
+import {CardMedia} from "@mui/material";
 import kobayashiMaru from "./images/kobayashiMaru.jpg";
 
 const question = ()=>{

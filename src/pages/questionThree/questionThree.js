@@ -1,12 +1,12 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
+import makeStyles from '@mui/styles/makeStyles';
+import List from '@mui/material/List';
 
-import Paper from '@material-ui/core/Paper';
+import Paper from '@mui/material/Paper';
 
-import Android from "@material-ui/icons/Android";
-import Pets from "@material-ui/icons/Pets";
-import BugReport from "@material-ui/icons/BugReport";
+import Android from "@mui/icons-material/Android";
+import Pets from "@mui/icons-material/Pets";
+import BugReport from "@mui/icons-material/BugReport";
 
 import QuestionListItem from './questionListItem'
 import { createRowData } from './mocks'

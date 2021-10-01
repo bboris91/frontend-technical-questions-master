@@ -1,7 +1,7 @@
 import React from 'react'
-import Typography from "@material-ui/core/Typography";
+import Typography from "@mui/material/Typography";
 import Solution from './images/solution.png'
-import { CardMedia } from '@material-ui/core';
+import { CardMedia } from '@mui/material';
 const question = ()=>{
 	return (
 		<div>
