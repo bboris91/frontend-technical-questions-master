@@ -8,8 +8,23 @@ import QuestionTwo from "./pages/questionTwo";
 import QuestionThree from "./pages/questionThree";
 import QuestionFour from "./pages/questionFour";
 import AppBar from "./components/header";
-import { ThemeProvider, StyledEngineProvider, createTheme } from "@mui/material/styles";
-const theme = createTheme();
+import {
+  ThemeProvider,
+  StyledEngineProvider,
+  createTheme,
+} from "@mui/material/styles";
+import { green, blueGrey } from '@mui/material/colors';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: blueGrey[500],
+    },
+    secondary: {
+      main: green[400],
+    },
+  },
+});
 
 function App() {
   return (
